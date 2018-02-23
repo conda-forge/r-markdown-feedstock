@@ -32,7 +32,7 @@ requirements:
   run:
     - r-base
     - r-mime >=0.3
-    - libxrender 0.9.10
+    - xorg-libxrender 0.9.10
 
 test:
   commands:
