@@ -15,7 +15,7 @@ source:
   sha256: 538fd912b2220f2df344c6cca58304ce11e0960de7bd7bd573b3385105d48fed
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -32,6 +32,7 @@ requirements:
   run:
     - r-base
     - r-mime >=0.3
+    - libxrender 0.9.10
 
 test:
   commands:
