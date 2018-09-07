@@ -24,15 +24,9 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{native}}toolchain        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed  # [win]
-    - {{posix}}coreutils  # [win]
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
 
   host:
     - r-base
@@ -40,7 +34,6 @@ requirements:
 
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
     - r-mime >=0.3
     - xorg-libxrender 0.9.10
 
