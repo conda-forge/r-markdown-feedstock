@@ -24,13 +24,11 @@ requirements:
     - {{ posix }}zip             # [win]
   host:
     - r-base
-    - r-commonmark
-    - r-mime >=0.3
+    - r-litedown >=0.6
     - r-xfun
   run:
     - r-base
-    - r-commonmark
-    - r-mime >=0.3
+    - r-litedown >=0.6
     - r-xfun
 
 test:
@@ -40,12 +38,13 @@ test:
 
 about:
   home: https://github.com/rstudio/markdown
-  license: GPL-2.0-only
+  license: MIT
   summary: Provides R bindings to the 'Sundown' Markdown rendering library (<https://github.com/vmg/sundown>). Markdown is a plain-text formatting syntax that can be converted to 'XHTML' or other formats. See <http://en.wikipedia.org/wiki/Markdown> for more information about Markdown.
-  license_family: GPL2
+  license_family: MIT
   license_file:
-    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
-
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
+    
 extra:
   recipe-maintainers:
     - conda-forge/r
