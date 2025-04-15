@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-markdown-feed
 
 Home: https://github.com/rstudio/markdown
 
-Package license: GPL-2.0-only
+Package license: MIT
 
 Summary: Provides R bindings to the 'Sundown' Markdown rendering library (<https://github.com/vmg/sundown>). Markdown is a plain-text formatting syntax that can be converted to 'XHTML' or other formats. See <http://en.wikipedia.org/wiki/Markdown> for more information about Markdown.
 
