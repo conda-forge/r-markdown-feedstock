@@ -27,6 +27,7 @@ requirements:
     - r-litedown >=0.6
     - r-xfun
   run:
+    - pandoc >=1.14
     - r-base
     - r-litedown >=0.6
     - r-xfun
