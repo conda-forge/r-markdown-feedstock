@@ -12,7 +12,7 @@ source:
   sha256: a560de75fb6878901e38febfef3ea8d21cb63af63de0e583019867d189bf9541
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -27,6 +27,7 @@ requirements:
     - r-litedown >=0.6
     - r-xfun
   run:
+    - pandoc >=1.14
     - r-base
     - r-litedown >=0.6
     - r-xfun
